@@ -1,0 +1,10 @@
+function sum6(n,total)
+   total = total or 0 
+   if n == 0 then
+      return total
+   else
+      return sum6(n-1, total+n)
+   end
+end
+
+print(sum6(100000000))
