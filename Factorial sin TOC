@@ -1,0 +1,11 @@
+function fact(n)
+    if n == 0 then
+        return 1
+    else
+        return n * fact(n-1)
+    end
+end
+
+for i=1,100000,1 do
+    print(i,fact(i))
+end
